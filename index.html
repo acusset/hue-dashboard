@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<script type="text/javascript">
+window.App = {
+  Views: {},
+  Models: {},
+  Collections: {},
+};
+</script>
+</head>
+
+<body class="grey lighten-4">
+
+  <div class="navbar-fixed">
+    <nav class="blue">
+    	<div class="container">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </div>
+	<div class="container">
+		<div class="row" id="content">
+
+        </div>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/jquery-min.js"></script>
+<script type="text/javascript" src="js/materialize-min.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone-min.js"></script>
+<script type="text/javascript" src="app/Router.js"></script>
+<script type="text/javascript" src="app/models/Light.js"></script>
+<script type="text/javascript" src="app/models/State.js"></script>
+<script type="text/javascript" src="app/collections/Lights.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	App.router = new App.Router;
+	Backbone.history.start();
+});
+</script>
+
+</html>

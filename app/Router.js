@@ -10,7 +10,8 @@ App.Router = Backbone.Router.extend({
 		lights.fetch({
 			success: function () {
 				var light = lights.get(1);
-				light.turnOff();
+                var view = new App.Views.Light({model: light});
+                view.render();
 			}
 		});
 	}
